@@ -1,5 +1,5 @@
 # Maps
-This is a sub-repository of some work I did on creating a map-generating framework.
+This is a sub-repository of some work I did on creating a map-generating framework. The code is pretty rough in parts; I was figuring it out as I went. I tried to clean it up toward the end with some success, although it's still far from optimised.
 
 For more read this:
 https://medium.com/@al_hinds/making-dem-maps-fa2187b70c8b#.744ldhpov
