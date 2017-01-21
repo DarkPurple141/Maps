@@ -1,25 +1,5 @@
 #!/usr/local/bin/python3.5
 
- """
-    Map generating code using voronoi polygons.
-    
-    Copyright (C) 2017 Alexander Walker Hinds
-    --- Other attribution in-line
-
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
- """
-
 import pygame, os, random, numpy, math, color_palettes, queue, name_gen
 from pygame.locals import *
 from geom import *
@@ -788,6 +768,24 @@ def v_fx(screen):
     im1.save('test.png','PNG')
     return pygame.image.load('test.png')
 
+def pygame_demo_image():
+
+    # this function is for demoing a default output
+    size,polygons,poly_sites,rivers,cities,roads,regions = setup()
+    pygame.init()
+    pygame.font.init()
+
+    screen = pygame.display.set_mode(size,pygame.RESIZABLE)
+    pygame.display.set_caption('Map')
+    city_font = pygame.font.SysFont('arial', 20)
+    region_font = pygame.font.SysFont('arial', 30)
+
+    simple_render(polygons,poly_sites,rivers,cities,roads,regions,city_font,region_font,flag=True)
+    pygame.image.save(screen,'test.png')
+
+    pygame.quit()
+
+
 def testVoronoi():
 
     size,polygons,poly_site,river_list,city_sites,road_list,regions = setup(main_island_shape_seed=None)
@@ -851,4 +849,5 @@ def testVoronoi():
     pygame.quit()
 
 if __name__ == '__main__':
-    testVoronoi()
+    #testVoronoi()
+    pygame_demo_image()
