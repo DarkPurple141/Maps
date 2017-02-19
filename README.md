@@ -1,3 +1,5 @@
+![fantasy_image_example](https://cdn-images-1.medium.com/max/2000/1*emM9Ygf_PgXtW76gmz_Lww.png "Fantasy Map V4")
+
 # Maps
 This is a sub-repository of some work I did on creating a map-generating framework. The code is pretty rough in parts; I was figuring it out as I went. I tried to clean it up toward the end with some success, although it's still far from optimised.
 
