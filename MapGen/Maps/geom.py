@@ -1,10 +1,10 @@
-#!/usr/local/bin/python3.5
+#!/usr/bin/env python3
 
-import random, triangle
+import random
 
 """
     Map generating code using voronoi polygons.
-    
+
     Copyright (C) 2017 Alexander Walker Hinds
 
     This program is free software: you can redistribute it and/or modify

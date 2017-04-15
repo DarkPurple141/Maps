@@ -1,0 +1,12 @@
+# OSX
+.DS_Store
+
+#Compiled Python
+*.pyc
+
+# Setuptools distribution folder.
+/dist/
+
+# Python egg metadata, regenerated from source files by setuptools.
+/*.egg-info
+/*.egg

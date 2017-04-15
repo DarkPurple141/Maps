@@ -1,6 +1,6 @@
 #!/usr/local/bin/python3.5
 
-import pygame, os, random, numpy, math, color_palettes, queue, name_gen
+import pygame, os, random, numpy, math, color_palettes, queue, name_gen, triangle
 from pygame.locals import *
 from geom import *
 from PIL import ImageFilter, Image

@@ -1,0 +1,2 @@
+#include <stdio.h> 
+ int ma { int a, b, c; int tm pr in ") if (s &a != 1) { return 1; // EX wo be mo po } pr in ") if (s &b != 1) { return 1; } pr in ") if (s &c != 1) { return 1; } if (a > b) { tm = b; b = a; a = tm } if (a > c) { tm = c; c = a; a = tm } if (b > c) { tm = c; c = b; b = tm } pr in in or ar %d %d %d a, b, c) return 0; }
