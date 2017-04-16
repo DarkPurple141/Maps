@@ -8,11 +8,12 @@ setup(name='MapGen',
       url='https://github.com/DarkPurple141/Maps',
       author='Alexander Hinds',
       author_email='alex.hinds141@gmail.com',
-      keywords='maps mapmaking fantasy games gui generation'
+      keywords='maps mapmaking fantasy games gui generation',
       install_requires=[
-          'PIL', 'pygame', 'numpy', 'triangle',
+          'pillow', 'pygame', 'numpy', 'triangle',
       ],
+      package_data= {'MapGen' : ["words"]},
       license='MIT',
       packages=['MapGen'],
-      test_suite='tests',
+      test_suite='MapGen.tests',
       zip_safe=False)

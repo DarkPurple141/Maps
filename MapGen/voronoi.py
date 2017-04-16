@@ -1,4 +1,4 @@
-#!/usr/local/bin/python3.5
+#!/usr/bin/env python3
 
 import pygame, os, random, numpy, math, color_palettes, queue, name_gen, triangle
 from pygame.locals import *

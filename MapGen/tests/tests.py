@@ -2,10 +2,12 @@
 
 from unittest import TestCase
 
-import minifier
+import MapGen
+from MapGen import geom as g
+from MapGen import name_gen as n
 
-class TestJoke(TestCase):
-    def test_is_string(self):
-        #s = funniest.joke()
-        #self.assertTrue(isinstance(s, basestring))
-        self.assertTrue(True)
+class ModuleTests(TestCase):
+    def test_one(self):
+        g.main()
+    def test_two(self):
+        print(n.generate_name())
