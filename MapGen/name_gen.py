@@ -11,10 +11,9 @@ class Region:
         self.cities = []
 
     def regional_name(self):
-        regional_name = generate_name() # self.name[:3] + generate_name[3:]
+        # regional_name = generate_name() # self.name[:3] + generate_name()[3:]
 
-        return regional_name
-
+        return generate_name()
 
 def generate_name():
     alphabet = 'abcdefghijklmnopqrstuvwxyz'
@@ -44,4 +43,6 @@ def generate_name():
     return name
 
 if __name__ == '__main__':
-    print(generate_name())
+    r = Region()
+    print([r.regional_name() for _ in range(5)])
+    #print(generate_name())

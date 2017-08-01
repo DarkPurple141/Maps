@@ -16,4 +16,5 @@ setup(name='MapGen',
       license='MIT',
       packages=['MapGen'],
       test_suite='MapGen.tests',
+      include_package_data=True,
       zip_safe=False)
